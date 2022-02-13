@@ -1,0 +1,8 @@
+- name: roles
+  hosts: servers
+  become: true
+  become_method: sudo 
+  become_user: root
+  tasks:
+  - include: /etc/ansible/ansible-git/tasks/main.yml
+  

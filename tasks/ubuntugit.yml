@@ -1,0 +1,2 @@
+- shell: "apt-get update -y"
+- shell: "apt-get install git -y"

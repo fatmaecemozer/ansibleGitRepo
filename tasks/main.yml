@@ -1,0 +1,6 @@
+- name: install_git_for_ubuntu 
+  include: ubuntugit.yml
+  when: ansible_os_family == "Debian"
+- name: install_git_for_centos
+  include: centosgit.yml
+  when: ansible_os_family == "RedHat"
